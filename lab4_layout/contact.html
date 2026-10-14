@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+
+    <header>
+        <h1>Layout Sederhana</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Kontak</a>
+    </nav>
+
+    <section id="wrapper" class="page-wrapper">
+
+        <section id="main" class="page-main">
+            <h2>Hubungi Kami</h2>
+            <p>
+                Silakan isi formulir di bawah ini jika ingin
+                menyampaikan pertanyaan atau pesan.
+            </p>
+
+            <form class="contact-form" action="#" method="post">
+
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama"
+                    placeholder="Masukkan nama lengkap" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"
+                    placeholder="Masukkan alamat email" required>
+
+                <label for="subjek">Subjek</label>
+                <input type="text" id="subjek" name="subjek"
+                    placeholder="Masukkan subjek pesan" required>
+
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="6"
+                    placeholder="Tuliskan pesan Anda"
+                    required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+
+        <aside id="sidebar">
+            <div class="widget-box">
+                <h3 class="title">Informasi Kontak</h3>
+                <p>
+                    Gunakan formulir di halaman ini untuk
+                    menuliskan pertanyaan atau pesan Anda.
+                </p>
+            </div>
+
+            <div class="widget-box">
+                <h3 class="title">Panduan</h3>
+                <ul>
+                    <li><a href="#nama">Isi nama lengkap</a></li>
+                    <li><a href="#email">Isi email yang valid</a></li>
+                    <li><a href="#pesan">Tuliskan pesan</a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2021 - Universitas Pelita Bangsa</p> 
+    </footer>
+
+</div>
+</body>
+</html>
